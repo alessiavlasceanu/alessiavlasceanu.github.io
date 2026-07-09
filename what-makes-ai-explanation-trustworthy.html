@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>What Makes an AI Explanation Trustworthy? — Alessia M. Vlasceanu</title>
+<meta name="description" content="Not every explanation an AI system gives you is honest — notes on the gap between transparency and trust in XAI." />
+<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="logo">Alessia M. Vlasceanu</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../experience.html">Experience</a></li>
+      <li><a href="index.html" class="active">Blog</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom: 0;">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to blog</a>
+      <div class="post-hero-meta">July 2026 · 6 min read</div>
+      <h1>What Makes an AI Explanation Trustworthy?</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="container post-body">
+      <p>
+        "Explainable AI" gets treated like a solved problem — add a confidence score, a highlighted
+        feature, a plain-language summary, and the system is now transparent. But transparency and
+        trustworthiness are not the same thing, and conflating them is exactly the risk my recent
+        work, <em>When Transparency Deceives</em>, tries to unpack.
+      </p>
+
+      <h2>An explanation can be technically accurate and still mislead you</h2>
+      <p>
+        Here's the uncomfortable version: a system can tell you something true about how it reached
+        a decision, and still leave you with a false sense of security about whether that decision was
+        good. It can show you the right features, the right weights, the right visual, and still hide
+        the thing that actually matters — whether the underlying reasoning reflects the values and
+        context a human would consider relevant. That's the gap between an <em>honest explainer</em>
+        and a merely transparent one.
+      </p>
+
+      <h2>Why this isn't just an academic distinction</h2>
+      <p>
+        In practice, this shows up whenever an AI system is explaining a decision that affects someone's
+        life — a hiring recommendation, a medical triage flag, a fraud alert. If the explanation is
+        designed to build confidence rather than to genuinely inform, people either over-trust the
+        system (and stop questioning it) or, once they sense something's off, lose trust in explanation
+        entirely — including the honest ones. Both outcomes are bad, and both are avoidable if we treat
+        explanation design as an ethical safeguard rather than a UI feature.
+      </p>
+
+      <h2>What "good" looks like</h2>
+      <p>
+        In our work, we've been trying to systematise what separates a security- and ethics-aware
+        explanation from a decorative one: does it expose uncertainty rather than paper over it? Does
+        it invite scrutiny rather than discourage it? Does it hold up when the person reading it is a
+        non-expert, not just an engineer reviewing their own model? These are the evaluation criteria
+        we're proposing — not as a checklist, but as a starting point for taking explanation seriously
+        as a place where ethics actually happens, not just where usability does.
+      </p>
+
+      <p>
+        I'll be presenting more on this at ICRES later this year — if you're working on XAI, robot
+        ethics, or anything adjacent, I'd love to compare notes.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© <span data-year>2026</span> Alessia M. Vlasceanu</p>
+    <div class="social-row">
+      <a href="../index.html">Home</a>
+      <a href="../research.html">Research</a>
+      <a href="../experience.html">Experience</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
